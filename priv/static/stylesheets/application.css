@@ -78,6 +78,14 @@ section {
   padding-bottom: 200px;
 }
 
+section h1 {
+  color: #313131;
+  font-size: 42px;
+  font-weight: 800;
+  position: relative;
+  margin-bottom: 50px;
+}
+
 article {
   border-bottom: 1px solid #e6e6e6;
   margin: 0 -20px 70px -20px;
@@ -85,10 +93,7 @@ article {
 }
 
 article h1 {
-  color: #313131;
-  font-size: 42px;
-  font-weight: 800;
-  position: relative;
+  margin-bottom: 0;
 }
 
 article h1 a {
@@ -136,6 +141,67 @@ ol {
 
 li {
   margin: 0 0 5px 20px;
+}
+
+label {
+  font: 16px "Raleway", sans-serif;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], textarea {
+  color: #696969;
+  font: 16px/30px "Merriweather", serif;
+  border: 1px solid #c2c2c2;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus, textarea:focus {
+  color: #414141;
+  border: 1px solid #f14a2a;
+  outline: 0;
+}
+
+textarea {
+  min-height: 300px;
+  max-width: 100%;
+}
+
+input[type="submit"] {
+  border: 0;
+  cursor: pointer;
+}
+
+.draft {
+  background: #a6a6a6;
+}
+
+.draft:hover {
+  background: #747474;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+}
+
+.publish {
+  background: #f14a2a;
+}
+
+.publish:hover {
+  background: #313131;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
 }
 
 .button {
