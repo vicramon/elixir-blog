@@ -4,8 +4,8 @@
   <title><%= @title %></title>
 </head>
 <body>
-  <%= lc { title, content } inlist @posts do %>
-    <h3><%= title %></h3>
+  <%= lc { headline, content } inlist @posts do %>
+    <h3><%= headline %></h3>
     <p>
       <%= content %>
     </p>

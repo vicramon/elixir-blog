@@ -10,7 +10,7 @@ defmodule Post do
   use Ecto.Entity
 
   dataset :posts do
-    field :title, :string
+    field :headline, :string
     field :content, :string
   end
 end
