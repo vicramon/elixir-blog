@@ -18,9 +18,15 @@ end
 defmodule PostQueries do
   import Ecto.Query
 
-  def all, do: Enum.map(_all, fn(x) -> {x.title, x.content} end)
+  def find_by_id(id) do
+    { :ok, post } = Enum.fetch(_find_by_id(id), 0)
+    post
+  end
+
+  def all, do: Enum.map(_all, fn(x) -> {x.headline, x.content} end)
 
   defp _all, do: MyRepo.all(from p in Post)
+  defp _find_by_id(id), do: MyRepo.all(from p in Post, where: p.id == id)
 end
 
 { :ok, _pid } = Postgres.start(MyRepo)

@@ -4,9 +4,9 @@
   <title><%= @title %></title>
 </head>
 <body>
-  <h3><%= @headline %></h3>
+  <h3><%= @post.headline %></h3>
   <p>
-    <%= @content %>
+    <%= @post.content %>
   </p>
 </body>
 </html>
