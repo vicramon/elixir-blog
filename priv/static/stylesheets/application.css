@@ -1,0 +1,182 @@
+/*----------------------------------------
+Tantek Celik's Whitepsace Reset
+     Author:    Tantek Celik, Shane Riley
+    Version:    (CC) 2010 Some Rights Reserved - http://creativecommons.org/licenses/by/2.0
+Description:  Resets default styling of common browsers to a common base
+----------------------------------------
+*/
+ul, ol {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6, pre, code {
+  font-size: 1em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input, dl, dt, dd, figure, figcaption {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+}
+
+a img, :link img, :visited img, fieldset {
+  border: none; }
+
+address {
+  font-style: normal; }
+
+header, section, article, nav, footer, hgroup, details, summary, figure {
+  display: block; }
+
+mark {
+  color: inherit;
+  background: transparent; }
+
+abbr {
+  border: none; }
+
+summary::-webkit-details-marker {
+  display: none; }
+
+body {
+  font-family: "Merriweather", serif;
+}
+
+.container {
+  width: 750px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  background: #313131;
+  padding: 50px 0;
+  margin-bottom: 80px;
+}
+
+header h1 {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+header a {
+  color: #dadada;
+}
+
+header a:hover {
+  color: #ffffff;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+}
+
+section {
+  padding-bottom: 200px;
+}
+
+article {
+  border-bottom: 1px solid #e6e6e6;
+  margin: 0 -20px 70px -20px;
+  padding: 0 20px 70px 20px;
+}
+
+article h1 {
+  color: #313131;
+  font-size: 42px;
+  font-weight: 700;
+  position: relative;
+}
+
+article h1 a {
+  color: #313131;
+}
+
+article h1 a:hover {
+  color: #f14a2a;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+}
+
+article h1::after {
+  border-top: 5px solid #313131;
+  display: block;
+  width: 190px;
+  height: 0;
+  content: "";
+  position: relative;
+  margin: 30px 0;
+}
+
+article p, li {
+  color: #696969;
+  font: 16px/30px "Merriweather", serif;
+}
+
+article p {
+  margin-bottom: 15px;
+}
+
+ul, ol {
+  list-style-position: inside;
+  margin: 0 0 15px 20px;
+}
+
+ul {
+  list-style: square;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li {
+  margin: 0 0 5px 20px;
+}
+
+.button {
+  color: #ffffff;
+  font: 17px "Raleway", sans-serif;
+  font-weight: 200;
+  display: inline-block;
+  padding: 15px 30px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.readmore {
+  background: #f14a2a;
+  margin-top: 20px;
+}
+
+.readmore:hover {
+  background: #313131;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+}
+
+.nav {
+  background: #313131;
+}
+
+.nav:hover {
+  background: #f14a2a;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
