@@ -20,7 +20,7 @@ defmodule PostQueries do
   import Ecto.Query
 
   def all, do: Enum.map(_all, fn(x) -> {x.title, x.content} end)
-  
+
   defp _all, do: MyRepo.all(from p in Post)
 end
 
@@ -36,5 +36,9 @@ defmodule ApplicationRouter do
   get "/" do
     conn = conn.assign(:title, "Welcome to Dynamo!")
     render conn, "index.html", posts: PostQueries.all
+  end
+
+  get "/*" do
+    render conn, "404.html"
   end
 end
