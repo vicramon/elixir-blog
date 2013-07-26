@@ -13,7 +13,6 @@ defmodule Post do
     field :title, :string
     field :content, :string
   end
-
 end
 
 defmodule PostQueries do
@@ -31,10 +30,12 @@ defmodule ApplicationRouter do
 
   prepare do
     conn.fetch([:cookies, :params])
+    conn = conn.assign(:title, "Elixir Blog")
   end
 
+  forward "/posts", to: PostsRouter
+
   get "/" do
-    conn = conn.assign(:title, "Welcome to Dynamo!")
     render conn, "index.html", posts: PostQueries.all
   end
 
