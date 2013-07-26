@@ -1,15 +1,41 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
   <title><%= @title %></title>
-</head>
-<body>
-  <%= lc { headline, content } inlist @posts do %>
-    <h3><%= headline %></h3>
-    <p>
-      <%= content %>
-    </p>
-  <% end %>
-  <p>There <%= if Enum.count(@posts) == 1, do: "is 1 post", else: "are #{Enum.count(@posts)} posts" %>
-</body>
+    <meta charset="UTF-8">
+    <meta content="width=device-width", maximum-scale=1.0, user-scalable=0, name="viewport">
+    <!--[if IE]>
+      <script src="/javascripts/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    <link href="/static/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Raleway:800,200|Merriweather:400,400italic" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <header>
+
+      <div class="container">
+        <h1><a href="#">Revenge of the Sith</a></h1>
+      </div>
+
+    </header>
+
+    <div class="container">
+
+      <section>
+        <%= lc { headline, content } inlist @posts do %>
+          <article>
+            <h1><a href="/posts/"><%= headline %></a></h1>
+            <p>
+              <%= content %>
+            </p>
+            <a href="/posts/" class="button readmore">Read More</a>
+          </article>
+        <% end %>
+
+      </section>
+
+    </div>
+
+  </body>
 </html>
