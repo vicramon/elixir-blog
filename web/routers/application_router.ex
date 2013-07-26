@@ -22,7 +22,6 @@ defmodule PostQueries do
   def all, do: Enum.map(_all, fn(x) -> {x.title, x.content} end)
   
   defp _all, do: MyRepo.all(from p in Post)
-
 end
 
 { :ok, _pid } = Postgres.start(MyRepo)

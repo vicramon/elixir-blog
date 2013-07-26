@@ -8,4 +8,5 @@ defmodule Blog do
   def start(_type, _args) do
     Blog.Dynamo.start_link([max_restarts: 5, max_seconds: 5])
   end
+
 end
