@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title><%= @title %></title>
+</head>
+<body>
+  <%= lc { title, content } inlist @posts do %>
+    <h3><%= title %></h3>
+    <p>
+      <%= content %>
+    </p>
+  <% end %>
+  <p>There <%= if Enum.count(@posts) == 1, do: "is 1 post", else: "are #{Enum.count(@posts)} posts" %>
+</body>
+</html>
