@@ -63,8 +63,11 @@ header {
 }
 
 header h1 {
+  background: url("../images/icon_logo.png") center left no-repeat;
   font-size: 30px;
+  line-height: 41px;
   font-weight: 200;
+  padding-left: 40px;
 }
 
 header a {
@@ -150,8 +153,8 @@ section h1 {
 
 article {
   border-bottom: 1px solid #e6e6e6;
-  margin: 0 -20px 70px -20px;
-  padding: 0 20px 70px 20px;
+  padding: 0 20px 60px 20px;
+  margin: 0 -20px 60px -20px;
   overflow: hidden;
 }
 
@@ -303,7 +306,7 @@ input[type="submit"] {
 .date {
   color: #b4b4b4;
   font: 17px "Raleway", sans-serif;
-  margin-top: 34px;
+  margin: 34px 0 0 0;
 }
 
 .readmore + .date {
