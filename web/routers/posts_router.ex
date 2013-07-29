@@ -2,7 +2,7 @@ defmodule PostsRouter do
   use Dynamo.Router
 
   prepare do
-    conn = conn.assign(:title, "Elixir Posts")
+    conn = conn.assign(:title, "Elixir Blog")
   end
 
   get "/" do
