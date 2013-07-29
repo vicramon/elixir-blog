@@ -184,6 +184,7 @@ input[type="submit"] {
 
 .draft {
   background: #a6a6a6;
+  float: right;
 }
 
 .draft:hover {
@@ -195,6 +196,7 @@ input[type="submit"] {
 
 .publish {
   background: #f14a2a;
+  float: left;
 }
 
 .publish:hover {
@@ -239,10 +241,10 @@ input[type="submit"] {
   -o-transition: background 0.3s;
 }
 
-.left {
+.prev {
   float: left;
 }
 
-.right {
+.next {
   float: right;
 }

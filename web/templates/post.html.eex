@@ -33,8 +33,8 @@
         </article>
 
         <nav>
-          <a href="#" class="button nav left">Previous Post</a>
-         <a href="#" class="button nav right">Next Post</a>
+          <a href="#" class="button nav prev">Previous Post</a>
+         <a href="#" class="button nav next">Next Post</a>
         </nav>
 
       </section>
