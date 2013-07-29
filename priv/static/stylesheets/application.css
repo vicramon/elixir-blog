@@ -152,6 +152,7 @@ article {
   border-bottom: 1px solid #e6e6e6;
   margin: 0 -20px 70px -20px;
   padding: 0 20px 70px 20px;
+  overflow: hidden;
 }
 
 article h1 {
@@ -295,7 +296,19 @@ input[type="submit"] {
 
 .readmore {
   background: #f14a2a;
+  float: left;
   margin-top: 20px;
+}
+
+.date {
+  color: #b4b4b4;
+  font: 17px "Raleway", sans-serif;
+  margin-top: 34px;
+}
+
+.readmore + .date {
+  float: left;
+  margin-left: 20px;
 }
 
 .readmore:hover {
