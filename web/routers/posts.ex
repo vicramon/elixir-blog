@@ -17,7 +17,7 @@ defmodule PostQueries do
   def post({ :ok, post }),  do: post
   def post(:error), do: nil
 
-  def all, do: Enum.map(_all, fn(x) -> {x.headline, x.content} end)
+  def all, do: Enum.map(_all, fn(x) -> {x.id, x.headline, x.content} end)
 
   defp _all, do: MyRepo.all(from p in Post)
 

@@ -23,13 +23,13 @@
     <div class="container">
 
       <section>
-        <%= lc { headline, content } inlist @posts do %>
+        <%= lc { id, headline, content } inlist @posts do %>
           <article>
-            <h1><a href="/posts/"><%= headline %></a></h1>
+            <h1><a href="/posts/<%= id %>"><%= headline %></a></h1>
             <p>
               <%= content %>
             </p>
-            <a href="/posts/" class="button readmore">Read More</a>
+            <a href="/posts/<%= id %>" class="button readmore">Read More</a>
           </article>
         <% end %>
 
