@@ -192,6 +192,14 @@ article p {
   margin-bottom: 15px;
 }
 
+article img {
+  border-bottom: 5px solid #313131;
+  float: right;
+  clear: both;
+  padding-bottom: 15px;
+  margin: 0 0 20px 20px;
+}
+
 ul, ol {
   list-style-position: inside;
   margin: 0 0 15px 20px;
